@@ -21,6 +21,8 @@
 #include "cmsis_os.h"
 #include "adc.h"
 #include "bdma.h"
+#include "dma.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -106,8 +108,19 @@ int main(void)
   MX_TIM2_Init();
   MX_ADC3_Init();
   MX_FMC_Init();
+  MX_DMA_Init();
+  MX_SPI2_Init();
+  MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
-  printf("HelloWorld\r\n");
+
+//  printf("\r\n");
+//  printf("    __  _________ __ _____    __             ___    __   _ _   __            \r\n");
+//  printf("   / / / /__  / // /|__  /   / /_  __  __   /   |  / /__(_) | / /_  ______ _ \r\n");
+//  printf("  / /_/ /  / / // /_ /_ <   / __ \\/ / / /  / /| | / //_/ /  |/ / / / / __ `/\r\n");
+//  printf(" / __  /  / /__  __/__/ /  / /_/ / /_/ /  / ___ |/ ,< / / /|  / /_/ / /_/ /  \r\n");
+//  printf("/_/ /_/  /_/  /_/ /____/  /_.___/\\__, /  /_/  |_/_/|_/_/_/ |_/\\__, /\\__,_/\r\n");
+//  printf("                                /____/                       /____/          \r\n");
+
   /* USER CODE END 2 */
 
   /* Init scheduler */
