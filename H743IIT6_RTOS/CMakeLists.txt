@@ -58,16 +58,8 @@ include_directories(Inc Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_D
     Hardwares/RGB_LCD
     Hardwares/TOUCH
     Hardwares/SDRAM
+    MiddleWares/lvgl
     MiddleWares/lvgl/porting
-    MiddleWares/lvgl/src
-    MiddleWares/lvgl/src/core
-    MiddleWares/lvgl/src/draw
-    MiddleWares/lvgl/src/extra
-    MiddleWares/lvgl/src/font
-    MiddleWares/lvgl/src/gpu
-    MiddleWares/lvgl/src/hal
-    MiddleWares/lvgl/src/misc
-    MiddleWares/lvgl/src/widgets
     MiddleWares/lvgl/src/demos
     MiddleWares/lvgl/ui
 )
